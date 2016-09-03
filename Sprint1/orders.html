@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<title>Orders</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="Styles/style.css" type = "text/css"/>
+	<script src="Scripts/apply.js" ></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="body" onload="DBrefget ()">
+
+	<header class="mainheader">
+		<img src="Images/NewLogo.png" alt="logo"/>
+		<div id="nav">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li><li>
+					<a href="blank1.html">Blank</a></li><li class="active">
+					<a href="#">Orders</a></li><li>
+					<a href="jarrodspage.html">Jarrods Page (PHP)</a></li><li>
+					<a href="blank2.html">Blank</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		<div class="mainContent">
+			<div class="content2">
+				
+				<article class="bottomcontent">
+					<header>
+						<h2><a href="#" title="About Us:">Order Item:</a></h2>
+					</header>
+					
+					<footer class="WhoWrote">
+						<p class="post-info">Please fill out the form</p>
+					</footer>
+						<form id="register" onsubmit="return validation()" method="post" action="" >
+							<fieldset>
+								Item: <select id = "State" name = "State">
+										<option name="">drug1</option>
+										<option name="">drug2</option>
+										<option name="">drug3</option>
+										<option name="">drug4</option>
+										<option name="">drug5</option>
+										<option name="">drug6</option>
+										<option name="">drug7</option>
+										<option name="">drug8</option>
+									</select> <br/>
+								First Name:  <input type="text" pattern = "[A-Za-z]+" id = "FirstName" name = "FirstName" onchange="fcheck()" size="20" maxlength="25" value="" placeholder="e.g. Luke" /> (Letters Only, No spaces) <br/>
+								<div class="error" id="fname_error"></div>
+								Last Name:  <input type="text" pattern = "[A-Za-z]+" id = "LastName" name = "LastName" onchange="lcheck()" size="20" maxlength="25" placeholder="e.g. Badawy"/> (Letters Only, No spaces) <br/>
+								<div class="error" id="lname_error"></div>
+								Date of birth:  <input type="text" pattern = "\d{1,2}/\d{1,2}/\d{4}" id = "Date" name = "Date" size="20" onchange="ageauto()" maxlength="10" placeholder="03/03/1997" /> (dd/mm/yyyy Format) <br/>
+								<div class="error" id="dob_error"></div>
+								Age:  <input type="text" id="Age" name="Age" size="20" required="required" readonly="readonly" /> <br/> 
+								Street:  <input type="text" id = "Street" name = "Street" size="20" maxlength="40" placeholder="15 Helina Street" required = "required"/> (Max length of 40) <br/>
+								Suburb:  <input type="text" id = "Suburb" name = "Suburb" size="20" maxlength="40" placeholder="Rowville" required = "required"/> (Max length of 40) <br/>
+								Postcode:  <input type="text" pattern="[0-9]{4}" id = "PostCode" name = "PostCode" onchange="autostate()" size="20" maxlength="4" placeholder="3179"/> (Max length of 4) <br/>
+								<div class="error" id="pcode_error"></div>
+								State:  <input type="text" id = "State" name = "State" size="20" maxlength="4" placeholder="VIC" readonly="readonly" required = "required"/>
+									<br/>
+								Email Address:  <input type="email" id = "EmailAddress" name = "EmailAddress" onchange="echeck()" size="20" maxlength="40" placeholder="lukeisswag@gmail.com" />  <br/> 
+								<div class="error" id="email_error"></div>
+								Phone number:  <input type="text" pattern="[0-9]+" id = "PhoneNumber" name = "PhoneNumber" maxlength = "12" minlength="8" size="20" placeholder="0425062234" required = "required"/> <br/> 
+								
+							</fieldset>
+						</form>
+
+					<footer class="WhoWrote">
+						<p class="register-text">Thank for your order!</p>
+					</footer>
+				</article>
+				
+			</div>
+		</div>
+		
+	<footer class="mainFooter">
+			<p>Copyright &#169; PeopleHealthPharmacy 2016</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,595 @@
+/*
+filename: styles.css
+description: People Health Pharmacy solution
+*/
+
+body{
+	background-image: url('Images/BlackBG.jpg'); 
+	color: #000305;
+	font-size: 87.5%;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #700000;
+
+}
+
+a:hover, a:active {
+	background-color: #900000;
+	color: #FFF;
+}
+
+.body  {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+
+.mainheader {
+	width: auto;
+	height: auto;
+	margin: 2% 0;
+}
+.mainheader img {
+	
+	width: 100%;
+	height: 150px;
+	margin-bottom: 1%;
+	border-radius: 5px;
+}
+.mainheader nav {
+	background-color: #666;
+	height:40px;
+	border-radius: 5px;
+}
+
+.mainheader nav ul {
+	list-style: none;
+	margin: 0 auto;
+	
+}
+.mainheader nav ul li {
+	float: left;
+	display: inline-block;
+	/* New code added to fix "Other" not being filled grey */
+	background-color: #666;
+	border-radius: 5px;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+    height: 20px;
+	transition: all 0.6s ease;
+
+}
+
+.mainheader nav a:hover, mainheader nav a:active, 
+.mainheader nav .active a:link, .mainheader nav .active a:visited{
+	background-color: #700000;
+	text-shadow: none;
+
+}
+.mainheader nav ul li a {
+	/*  Rounded Navigation Buttons  */
+	border-radius: 5px;
+}
+
+.mainContent {
+	/*   Distance between lines vertically in the body   */
+	line-height: 25px;
+	border-radius: 5px;
+}
+.WhoWrote {
+	/*   Colour of the text which declares the author   */
+	color: #B0B0B0;
+}
+
+.contentClosed {
+	/*   Makes content items on home page stay to the left   */
+	width: 0%;
+	float: left;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.content {
+	/*   Makes content items on home page stay to the left   */
+	width: 70%;
+	float: left;
+	overflow: hidden;
+	opacity: 1;
+	transition: all 2s ease;
+}
+.contentloaded {
+	/*   Makes content items on home page stay to the left   */
+	width: 70%;
+	float: left;
+	overflow: hidden;
+	opacity: 1;
+}
+.content2 {
+	width: 100%;
+	float: left;
+}
+
+
+.topcontent {
+	/*   The colour of the top box on the pages, also rounds edges   */
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 1.5% 5%; /*   Distance from the edge of the box (How far text is from the edge/images)   */
+	margin-bottom: 3%;  
+}
+.bottomcontent {
+	/*   The colour of the bottom box on the pages, also rounds edges   */
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 1.5% 5%;
+	margin-bottom: 3%;
+}
+.top-sidebar-closed {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;	
+	overflow: hidden;
+	opacity: 0;
+	animation-delay: 2s;
+	transition: all 2s ease;
+    transition-delay: 2s;
+}
+.top-sidebar {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	transition: all 2s ease;
+    transition-delay: 2s;
+	
+}
+
+.top-sidebar-loaded {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 1;
+	
+}
+
+.middle-sidebar-closed {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 0;
+	transition: all 2s ease;
+    transition-delay: 2.3s;
+}
+
+.middle-sidebar {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 1;
+	transition: all 2s ease;
+    transition-delay: 2.2s;
+}
+
+.middle-sidebar-loaded {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 1;
+}
+
+.bottom-sidebar-closed {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 0; 
+	transition: all 2s ease; 
+    transition-delay: 2.6s;
+}
+
+.bottom-sidebar {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 1;
+	transition: all 2s ease;
+    transition-delay: 2.6s;
+}
+
+.bottom-sidebar-loaded {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 1;
+}
+
+.bottom-sidebar-closed2 {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 0;
+	transition: all 2s ease;
+    transition-delay: 2.9s;
+}
+
+.fBook {
+	text-align: center; 
+	border-radius: 3px;
+}
+
+.bottom-sidebar2 {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 1;
+	transition: all 2s ease;
+    transition-delay: 2.9s;
+}
+
+.bottom-sidebar2-loaded {
+	width: 22%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	opacity: 1;
+}
+
+.mainFooter {
+	width:100%;
+	float: left;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #666;
+	margin-bottom: 2%;
+	/* margin-top: 1%; */
+}
+.mainFooter p {
+	width: 100%;
+	margin: 10px auto;
+	color: #FFF;
+	text-align: center;
+	
+}
+#nav ul li:hover ul {
+	display: block;
+}
+#nav ul ul {
+	display: none;
+	position: absolute;
+	background-color: #666;
+	border-radius: 5px;
+}
+#nav ul ul li {
+	display: block;
+}
+.middle-sidebar article{
+	transition: all 1s ease;
+}
+.bottom-sidebar2-loaded img{
+	transition: all 1s ease;
+}
+.middle-sidebar article:hover {
+	filter: blur(5px);
+}
+
+.bottom-sidebar2-loaded img:hover {
+	filter: blur(5px);
+}
+
+
+.blockexpand {
+	margin-bottom: 2%;
+    width: 90%;
+    height: 20px;
+    background: rgba(700, 0, 0, 0.3);
+    transition: all 2s ease;
+	border-radius: 5px;
+	padding: 1.5% 5%;
+	overflow: hidden;
+	text-align: center;
+}
+.blockexpand2 {
+	margin-bottom: 2%;
+    width: 90%;
+    background: red;
+    text-align: center;
+	border-radius: 5px;
+	padding: 1.5% 5%;
+	overflow: hidden;
+	transition: all 2s ease;
+	height: 400px;
+	opacity: 1;
+}
+
+.arrow {
+	opacity: 1;
+	border-radius: 9px;
+	text-align: center;
+}
+
+@media only screen and (min-width:150px) and (max-width: 1030px)
+{
+
+.body  {
+	width: 90%;
+	font-size: 95%;
+	}	
+.mainheader img {
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+}
+
+.mainheader nav {
+	height:160px;
+	border-radius: 5px;
+}
+
+.mainheader nav ul {
+	padding-left: 0;
+	border-radius: 5px;
+}
+.mainheader nav ul li {
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	padding: 10px 25px;
+    height: 20px;
+	display: block;
+}
+.blockexpand {
+	float: left;
+	margin-top: 2%;
+	margin-bottom: -.1%;
+}
+
+.blockexpand2 {
+	float: left;
+	margin-top: 2%;
+	margin-bottom: -.1%;
+}
+
+.content {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+}
+.contentloaded {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+}
+
+.post-info {
+	display: none;
+}
+
+.topcontent {
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 1.5% 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	max-height: 400px;
+	overflow: scroll;
+	 
+}
+.bottomcontent {
+	max-height: 400px;
+	margin-top: 3%; 
+	overflow: scroll;
+}
+.top-sidebar {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	
+}
+
+.top-sidebar-loaded {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	
+}
+
+.middle-sidebar {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+.middle-sidebar-loaded {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.bottom-sidebar {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.bottom-sidebar-loaded {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.bottom-sidebar2 {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.bottom-sidebar2-loaded {
+	width: 94%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+}
+@media only screen and (min-width:1200px) and (max-width: 1980px)
+{
+	.mainheader img {
+	width: 100%;
+	height: 200px;
+	border-radius: 5px;
+}
+
+}
+.Vid {
+	
+	width: 100%;
+	height: 500px;
+}
+.TextCenter {
+	text-align: center;
+	}
+.JobsImg {
+	width: 60%;
+	height: auto;
+	margin-left: 20%;
+}
+#Mname {
+	text-align: left;
+	font-weight: bold;
+	font-size: 150%;
+}
+#ABme {
+	font-size: 250%;
+	text-align: center;
+}
+#ImgMe {
+	
+	width: 20%;
+	height: auto;
+	margin-left: 72%;
+	border: double;
+	padding: 40px;
+}
+#Snum {
+	font-family: Courier;
+}
+#TutName {
+	text-align: left;
+}
+.TutInfo {
+	text-align: right;
+}
+#CourseInfo {
+	color: #00ff00;
+}
+.Bol {
+	font-weight: bold;
+}
+.inAni {
+	background-color: #BF5FFF;
+	border-bottom: hidden;
+	text-align: center;
+}
+.ImaSto {
+	background-color: #FF69B4;
+	border-bottom: hidden;
+	text-align: center;
+}
+.WebApps {
+	background-color: #75d0a6;
+	border-bottom: hidden;
+	text-align: center;
+}
+#message {
+	text-align: center;
+}
+.ddbit {
+	text-align: left;
+	font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.register-text {
+	text-align: center;
+}
+.error {
+	color: #FF0000;
+}
